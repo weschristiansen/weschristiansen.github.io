@@ -13,7 +13,7 @@ import './home.css';
 
 class Home extends Component {
     static defaultProps = {
-        gravatar: 'https://www.gravatar.com/avatar/a844e923c24bd60aa0a2f0b3308ec720.jpg?s=300',
+        gravatar: 'https://www.gravatar.com/avatar/a844e923c24bd60aa0a2f0b3308ec720.jpg?s=500',
         instagram: { followers: 10, stories: 10 },
         twitter: { followers: 100, tweets: 30 },
     };
@@ -33,9 +33,17 @@ class Home extends Component {
 
         return (
             <div className="home">
-                <div>
+                <div className="wrapper">
                     <img className="gravatar" src={gravatar} />
-                    <h1>wes christiansens</h1>
+                </div>
+                <div className="name">
+                    <h1>wes christiansen</h1>
+                    <span>staff engineer / team lead</span>
+                </div>
+                <div className="linkedin">
+                    <a href="https://www.linkedin.com/in/weschristiansen" rel="noopener" >linkedin</a>
+                    {' / '}
+                    <a href="https://github.com/weschristiansen" rel="noopener" >github</a>
                 </div>
             </div>
         );

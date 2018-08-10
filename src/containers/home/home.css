@@ -2,5 +2,45 @@
   display: block;
   text-align: center;
   margin-top: 200px; }
-  .home .gravatar {
-    border-radius: 300px; }
+  .home .wrapper {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    background: linear-gradient(#fff, #000);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.5);
+    z-index: 100; }
+    .home .wrapper .gravatar {
+      border-radius: 20px;
+      opacity: 0.85;
+      filter: grayscale(0.85); }
+  .home .name {
+    color: white;
+    position: relative;
+    margin-top: -86px;
+    z-index: 101; }
+    .home .name > h1 {
+      font-size: 1.7em;
+      margin: 0;
+      margin-bottom: .3em; }
+    .home .name > span {
+      opacity: 0.8; }
+  .home .linkedin {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #004909;
+    width: 360px;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all 0.25s;
+    z-index: 50;
+    color: white; }
+    .home .linkedin a {
+      color: white;
+      text-decoration: none; }
+      .home .linkedin a:hover {
+        text-decoration: underline; }
+    .home .linkedin:hover {
+      transform: scale(1.05); }

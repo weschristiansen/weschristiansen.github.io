@@ -3,7 +3,62 @@
     text-align: center;
     margin-top: 200px;
     
-    .gravatar {
-        border-radius: 300px;
+    .wrapper {
+        width: 500px;
+        height: 500px;
+        display: inline-block;
+        background: linear-gradient(#fff, #000);
+        border-radius: 20px;
+        position: relative;
+        box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.5);
+        z-index: 100;
+
+        .gravatar {
+            border-radius: 20px;
+            opacity: 0.85;
+            filter: grayscale(0.85);
+        }
+    }
+    
+    .name {
+        color: white;
+        position: relative;
+        margin-top: -86px;
+        z-index: 101;
+
+        & > h1 {
+            font-size: 1.7em;
+            margin: 0;
+            margin-bottom: .3em;
+        }
+        & > span {
+            opacity: 0.8;
+        }
+    }
+
+    .linkedin {
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #004909;
+        width: 360px;
+        padding: 20px;
+        margin-top: 20px;
+        display: inline-block;
+        transition: all 0.25s;
+        z-index: 50;
+        color: white;
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 }
