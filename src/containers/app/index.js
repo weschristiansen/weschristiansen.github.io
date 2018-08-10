@@ -14,8 +14,8 @@ export default class App extends Component {
                 </Helmet>
                 <main>
                     <Switch>
-                        <Route exact path="/profile" component={Home} />
-                        <Redirect to="/profile" />
+                        <Route exact path="/" component={Home} />
+                        <Redirect to="/" />
                     </Switch>
                 </main>
             </div>
