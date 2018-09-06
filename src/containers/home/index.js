@@ -7,6 +7,7 @@ import {
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 import { push } from 'connected-react-router';
 import './home.css';
@@ -41,9 +42,13 @@ class Home extends Component {
                     <span>staff engineer / team lead</span>
                 </div>
                 <div className="linkedin">
-                    <a href="https://www.linkedin.com/in/weschristiansen" rel="noopener" >linkedin</a>
-                    {' / '}
-                    <a href="https://github.com/weschristiansen" rel="noopener" >github</a>
+                    <a href="https://www.linkedin.com/in/weschristiansen" rel="noopener" ><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
+                    {' '}
+                    <a href="https://github.com/weschristiansen" rel="noopener" ><FontAwesomeIcon icon={['fab', 'github']} /></a>
+                    {' '}
+                    <a href="https://www.facebook.com/wes.christiansen" rel="noopener" ><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
+                    {' '}
+                    <a href="https://twitter.com/weschristiansen" rel="noopener" ><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
                 </div>
             </div>
         );
